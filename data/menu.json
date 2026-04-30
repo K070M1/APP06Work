@@ -1,0 +1,28 @@
+{
+    "platillos": [
+        {
+            "id": 1,
+            "nombre": "Ceviche de Mixto",
+            "descripcion": "Fresco y al limón",
+            "precio": 28.00
+        },
+        {
+            "id": 2,
+            "nombre": "Lomo Saltado",
+            "descripcion": "Clásico peruano con papas fritas",
+            "precio": 32.00
+        },
+        {
+            "id": 3,
+            "nombre": "Pizza Margherita",
+            "descripcion": "Con salsa cremosa",
+            "precio": 25.00
+        },
+        {
+            "id": 4,
+            "nombre": "Pasta Alfredo",
+            "descripcion": "Con salsa de tomate",
+            "precio": 30.00
+        }
+    ]
+}
