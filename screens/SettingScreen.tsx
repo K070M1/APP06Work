@@ -48,8 +48,6 @@ const SettingScreen = () => {
           />
         </View>
       </View>
-
-      {/* Sección: Cuenta */}
       <Text style={styles.sectionTitle}>Cuenta</Text>
       <View style={styles.card}>
         <TouchableOpacity
