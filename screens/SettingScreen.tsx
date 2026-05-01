@@ -8,7 +8,7 @@ import {
   ScrollView,
   Alert,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { SunMoon, Bell, ChevronRight, Lock, CreditCard, HelpCircle, LogOut, } from "lucide-react-native"
 
 const SettingScreen = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,7 +24,7 @@ const SettingScreen = () => {
       <View style={styles.card}>
         <View style={styles.settingRow}>
           <View style={styles.settingLeft}>
-            <Ionicons name="moon-outline" size={24} color="#333" />
+            <SunMoon color="#333" size={24} />
             <Text style={styles.settingText}>Modo Oscuro</Text>
           </View>
           <Switch
@@ -37,7 +37,7 @@ const SettingScreen = () => {
         <View style={styles.divider} />
         <View style={styles.settingRow}>
           <View style={styles.settingLeft}>
-            <Ionicons name="notifications-outline" size={24} color="#333" />
+            <Bell size={24} color="#333" />
             <Text style={styles.settingText}>Notificaciones de Pedidos</Text>
           </View>
           <Switch
@@ -55,10 +55,10 @@ const SettingScreen = () => {
           onPress={() => handlePress("Cambiar Contraseña")}
         >
           <View style={styles.settingLeft}>
-            <Ionicons name="lock-closed-outline" size={24} color="#333" />
+            <Lock color="#333" size={24} />
             <Text style={styles.settingText}>Cambiar Contraseña</Text>
           </View>
-          <Ionicons name="chevron-forward-outline" size={20} color="#ccc" />
+          <ChevronRight color="#ccc" size={20} />
         </TouchableOpacity>
         <View style={styles.divider} />
         <TouchableOpacity
@@ -66,10 +66,10 @@ const SettingScreen = () => {
           onPress={() => handlePress("Métodos de Pago")}
         >
           <View style={styles.settingLeft}>
-            <Ionicons name="card-outline" size={24} color="#333" />
+            <CreditCard color="#333" size={24} />
             <Text style={styles.settingText}>Métodos de Pago</Text>
           </View>
-          <Ionicons name="chevron-forward-outline" size={20} color="#ccc" />
+          <ChevronRight color="#ccc" size={20} />
         </TouchableOpacity>
       </View>
 
@@ -80,10 +80,10 @@ const SettingScreen = () => {
         >
           <View style={styles.settingRow}>
             <View style={styles.settingLeft}>
-              <Ionicons name="help-circle-outline" size={24} color="#333" />
+              <HelpCircle color="#333" size={24} />
               <Text style={styles.settingText}>Ayuda y Soporte</Text>
             </View>
-            <Ionicons name="chevron-forward-outline" size={20} color="#ccc" />
+            <ChevronRight color="#ccc" size={20} />
           </View>
         </TouchableOpacity>
 
@@ -91,7 +91,7 @@ const SettingScreen = () => {
           style={[styles.card, styles.logoutButton]}
           onPress={() => handlePress("Cerrar Sesión")}
         >
-          <Ionicons name="log-out-outline" size={24} color="#e74c3c" />
+          <LogOut color="#e74c3c" size={24} />
           <Text style={styles.logoutText}>Cerrar Sesión</Text>
         </TouchableOpacity>
       </View>
